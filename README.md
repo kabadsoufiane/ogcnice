@@ -3,7 +3,7 @@
 
 - **Java 17** ou supérieur
 - **Maven 3.8+**
-- **PostgreSQL** (ou H2 pour les tests rapides)
+- **PostgreSQL**
 - **Git** pour cloner le projet
 ## 2. Installation et Lancement
 
@@ -28,7 +28,11 @@ cd ogcnice
     volumes:
       postgres_data:
     ```
-### c. Accéder à la documentation et tester l’API
+### c. Compiler et lancer l’API
+
+mvn clean install
+mvn spring-boot:run
+### d. Accéder à la documentation et tester l’API
 
 - Swagger UI : [http://localhost:8080/api/swagger-ui/index.html](http://localhost:8080/api/swagger-ui/index.html)
 ## 2. Choix Techniques
@@ -37,7 +41,7 @@ cd ogcnice
 |-------------------|---------------------|---------------|
 | **Framework**     | Spring Boot         | Démarrage rapide, gestion native des dépendances, intégration facile de JPA, validation, logs et documentation automatique. |
 | **ORM**           | Hibernate (JPA)     | Persistance robuste, gestion des relations, pagination et tri natifs, support des transactions. |
-| **Base de données** | PostgreSQL        | PostgreSQL pour la robustesse et la portabilité[1]. |
+| **Base de données** | PostgreSQL        | PostgreSQL pour la robustesse et la portabilité. |
 | **Mapping**       | MapStruct           | Génération automatique et performante de code de mapping DTO/Entity, favorise la séparation des couches et la maintenabilité. |
 | **Validation**    | Bean Validation (Jakarta) | Sécurité et robustesse des données via annotations sur les DTOs, gestion centralisée des erreurs. |
 | **Documentation** | Swagger/OpenAPI (springdoc-openapi) | Génération automatique et interactive de la documentation API, facilitant les tests et l’intégration. |
