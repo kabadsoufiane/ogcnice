@@ -42,7 +42,7 @@ cd ogcnice
 | **Validation**    | Bean Validation (Jakarta) | Sécurité et robustesse des données via annotations sur les DTOs, gestion centralisée des erreurs. |
 | **Documentation** | Swagger/OpenAPI (springdoc-openapi) | Génération automatique et interactive de la documentation API, facilitant les tests et l’intégration. |
 | **Tests**         | JUnit 5, Mockito, Testcontainers | Qualité logicielle, robustesse, tests unitaires et d’intégration réalistes (Testcontainers pour PostgreSQL). |
-| **Logs**          | SLF4J + Logback     | Traçabilité des actions métier et facilité de debug[1]. |
+| **Logs**          | SLF4J + Logback     | Traçabilité des actions métier et facilité de debug. |
 
 ### Architecture
 
