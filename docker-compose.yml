@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_DB: nice_fc
+      POSTGRES_USER: nice
+      POSTGRES_PASSWORD: nice
+    ports:
+      - "5432:5432"
