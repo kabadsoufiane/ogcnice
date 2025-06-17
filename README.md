@@ -35,17 +35,17 @@ cd ogcnice
 
 | Composant         | Choix               | Justification |
 |-------------------|---------------------|---------------|
-| **Framework**     | Spring Boot         | Démarrage rapide, gestion native des dépendances, intégration facile de JPA, validation, logs et documentation automatique[1]. |
-| **ORM**           | Hibernate (JPA)     | Persistance robuste, gestion des relations, pagination et tri natifs, support des transactions[1]. |
+| **Framework**     | Spring Boot         | Démarrage rapide, gestion native des dépendances, intégration facile de JPA, validation, logs et documentation automatique. |
+| **ORM**           | Hibernate (JPA)     | Persistance robuste, gestion des relations, pagination et tri natifs, support des transactions. |
 | **Base de données** | PostgreSQL        | PostgreSQL pour la robustesse et la portabilité[1]. |
-| **Mapping**       | MapStruct           | Génération automatique et performante de code de mapping DTO/Entity, favorise la séparation des couches et la maintenabilité[1]. |
-| **Validation**    | Bean Validation (Jakarta) | Sécurité et robustesse des données via annotations sur les DTOs, gestion centralisée des erreurs[1]. |
-| **Documentation** | Swagger/OpenAPI (springdoc-openapi) | Génération automatique et interactive de la documentation API, facilitant les tests et l’intégration[1]. |
-| **Tests**         | JUnit 5, Mockito, Testcontainers | Qualité logicielle, robustesse, tests unitaires et d’intégration réalistes (Testcontainers pour PostgreSQL)[1]. |
+| **Mapping**       | MapStruct           | Génération automatique et performante de code de mapping DTO/Entity, favorise la séparation des couches et la maintenabilité. |
+| **Validation**    | Bean Validation (Jakarta) | Sécurité et robustesse des données via annotations sur les DTOs, gestion centralisée des erreurs. |
+| **Documentation** | Swagger/OpenAPI (springdoc-openapi) | Génération automatique et interactive de la documentation API, facilitant les tests et l’intégration. |
+| **Tests**         | JUnit 5, Mockito, Testcontainers | Qualité logicielle, robustesse, tests unitaires et d’intégration réalistes (Testcontainers pour PostgreSQL). |
 | **Logs**          | SLF4J + Logback     | Traçabilité des actions métier et facilité de debug[1]. |
 
 ### Architecture
 
-- **Séparation en couches** : Controller, Service, Repository, DTO, Mapper pour la maintenabilité et la testabilité[1].
-- **Gestion centralisée des erreurs** : `@ControllerAdvice` pour des réponses d’erreur uniformes et adaptées à l’API REST[1].
-- **Pagination et tri** : natifs grâce à Spring Data et au type `Pageable` dans les endpoints[1].
+- **Séparation en couches** : Controller, Service, Repository, DTO, Mapper pour la maintenabilité et la testabilité.
+- **Gestion centralisée des erreurs** : `@ControllerAdvice` pour des réponses d’erreur uniformes et adaptées à l’API REST.
+- **Pagination et tri** : natifs grâce à Spring Data et au type `Pageable` dans les endpoints.
